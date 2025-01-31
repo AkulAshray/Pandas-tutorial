@@ -1,0 +1,17 @@
+{
+  "name": "Python Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python",       // Python extension
+    "alexcvzz.vscode-sqlite",  // SQLite extension
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip install pandas sqlalchemy ipython-sql pdfplumber --no-cache-dir notebook jupyterlab",
+  "forwardPorts": [],
+  "remoteUser": "vscode"
+}
